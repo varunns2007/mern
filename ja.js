@@ -1,6 +1,4 @@
-
-
-        // Employee Details Function
+// Employee Details Function
 
         function employeeDetails(name, company) {
             console.log("Employee Name: " + name +
@@ -114,5 +112,24 @@
             .catch((error) => {
                 console.log(error);
             });
+        
 
+
+       
+        let emp = {
+            emp_id: 100,
+            emp_name: "varun",
+            salary: 40000,
+            company: {
+                name: "google",
+                location: {
+                    city: "Bangalore",
+                    country: "India"
+                }
+            }
+        };
+
+        console.log(emp.emp_id);
+        console.log(emp.company.name);
+        console.log(emp.company.location.city);
 
